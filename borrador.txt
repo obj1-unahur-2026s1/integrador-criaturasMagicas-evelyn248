@@ -1,0 +1,61 @@
+OBJETIVO: sistema de objetos que incluya criaturas conocidsa y desconocidas
+
+CRIATURAS:
+duendes: pertenece al reino del bosque
+hadas: pertenece al reino de las hadas
+puede haber mas
+
+todas saben:
+	poder magico
+	astucia
+	rol en el bosque (roles disponibles guardian, domador, o hechicero)(rol unico por criatura)
+
+las hadas saben:
+	cuantos km puede volar. cuando nacen. todas pueden volar 2km con el tiempo aumenta la cantidad que pueden vola con un max de 25. (puedeVolar.min(25))
+ROLES:
+roles disponibles: guardian, domador, o hechicero
+los domadores pueden tener mascotas mitologicasas que logan entrenar
+el domador sabe si la mascota tiene cuernos  o no y la edad
+
+PODER OFENSIVO DELAS CRIATURAS
+el poder ofensivo de cada criatura se calcula como su poder magico multiplicado por 10 mas un cierto extra que depende del rol
+	guardian: siempre recibe un extra 100
+	hechicero: no recibe extra
+	domador: recibe un extra de 150 unidades por cada mascota mitologica que tiene cuernos
+
+el poder ofensivo de los duendes aumenta un 10%
+	
+CRIATURAS FORMIDABLES
+la criatura es formidable si es astuta o extraordinaria
+
+un hada es astuta si su astucia es mayor a 50
+los duendes nunca son astutos
+si la criatura es extraordinaria, depende de que su rol sea extraordinario
+	domador: es extraordinario si el poder magico de la criatura es mayor o igual a 15 y si todas sus mascotas magicas son veteranas. una mascota magica es veterana cuando su edad es de 10
+	hechicero: siempre es extraordinario
+las hadas para ser formidables tb necesitan poder volar 10km
+
+RITUAL DE CAMBIO DE ROL
+si es un guardia, puede pasar a domarod con una mascota de 1 año y sin cuernos
+si es hechicero, puede pasar a guadian
+si es domador  puede pasar a hechicero solo si tiene una mascota con cuernos. sino el ritual s cancela
+
+COLONIAS, AREAS Y CONQUISTAS
+las criaturas se agrupan en colonias
+una colonia habita en un area del parque
+
+las colonias viven en los claros acgedores o los castillos
+
+conquista de un area del parque:
+ la colonia atacante lucha contra la colonia que habita el area actualmente
+
+el poder ofensivo d la colonia atacate es igual a la suma del poder ofensivo de cada criatura en la colonia
+
+el poder ofensivo del area depende del area:
+poder ofensio de castillo = 200 * cada criatura formidable si esta rodeado de murallas y fosos con agua
+
+el poder ofensivo de un claro = 100 + el poder ofensivo de la colonia q lo habita si el area esta en una zona abierta
+
+si el poder ofensivo de la oclonia atacante supera al poder ofensivo del area, el area es uurpada si la colonia comienza a vivir ahi
+
+si el area resulta vencedora, la colonia que habita ese aea se qued alli y la colonia invasora piede el 15% del poder magico
