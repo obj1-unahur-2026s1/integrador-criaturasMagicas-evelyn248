@@ -78,18 +78,15 @@ las areas habitadas son
 colonia puede intntar conquistar un area
 	la colonia atacante lucha contra la colonia actual que habita el area
 
-el poder ofensivo de la colonia atacante es igual a la suma del poder ofensivo de cada criatura que pertenece a la colonia
+el poder ofensivo de la colonia atacante es igual a la suma del poder 
+ofensivo de cada criatura que pertenece a la colonia
 
 el poder defensivo de un area depende del tipo de area
 	castillo= poder defensivo = 200*criatura formidable
 	claro= poder defensivo = 100+poder ofensivo de la colonia que lo habita
 
-si el poder ofensivo de la colonia invasora supera el pode defensivo del area, el area es usurpada por la colonia invasora
+si el poder ofensivo de la colonia invasora supera el pode defensivo del 
+area, el area es usurpada por la colonia invasora
 
-si el area resulta vencedora, la colonia invasora pierde el 15% de su poder magico
-
-
-
-
-
-
+si el area resulta vencedora, la colonia invasora pierde el 15% de su poder 
+magico
